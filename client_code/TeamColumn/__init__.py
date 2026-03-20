@@ -43,7 +43,6 @@ class TeamColumn(TeamColumnTemplate):
           if not named:
             n = Notification('Name already used. Try Another.',timeout=3)
             n.show()
-            time.sleep(4)
       newname = anvil.server.call('update_team',teamname,0,t.text)
       my_teams = anvil.server.call('my_teams',anvil.users.get_user()['email'])
       open_form('ShowTeams',my_teams)
@@ -57,7 +56,7 @@ class TeamColumn(TeamColumnTemplate):
       success = anvil.server.call('update_team',teamname,1)
     else:
       n=Notification('Delete Cancelled')
-      n.show
+      n.show()
     my_teams = anvil.server.call('my_teams',anvil.users.get_user()['email'])  
     open_form('ShowTeams',my_teams)
 
