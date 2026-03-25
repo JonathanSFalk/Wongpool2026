@@ -242,10 +242,14 @@ name: Wongpool 2026
 native_deps: {head_html: ''}
 package_name: Wongpool
 renamed: true
-runtime_options: {client_version: '3', server_spec: null, server_version: python3-full, version: 2}
+runtime_options:
+  client_version: '3'
+  server_spec: {}
+  server_version: python3-full
+  version: 2
 scheduled_tasks:
 - job_id: PWVJQAZL
-  task_name: no_update
+  task_name: update
   time_spec:
     at: {hour: 10, minute: 0}
     every: day
