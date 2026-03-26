@@ -57,12 +57,12 @@ user = anvil.users.get_user()
 #  x = anvil.server.call('check_a_team',t)
 #open_form('Analytics')
 #x = anvil.server.call('fill_in_players')
-#x=anvil.server.call('make_teams')
+x=anvil.server.call('make_teams')
 #exit
 #anvil.server.call('start_update')
 #open_form('HomePage')
 
-open_form('TeamPicker')
+#open_form('TeamPicker')
 
 
 #pdf = anvil.server.call('pdf2')
