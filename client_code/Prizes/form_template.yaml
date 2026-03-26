@@ -9,7 +9,7 @@ components:
       bold: true
       enabled: false
       height: 282.2222137451172
-      text: "Total Entries\t93\t\n\t\t\nEntry Fee\t$150\t\n\t\t\nTotal Prize Money\t$13,950\n\t\t\n6 Monthly winners ( = 30% of total)\t$700\t$4,200\n\t\t\nOverall 1st place  \t\t$4,890\n\t\t\nOverall 2nd place  \t\t$2,671\n\t\t\nOverall 3rd place  \t\t$1,390\n\t\t\nOverall 4th place  \t\t$700\n\t\t\nOverall last place (Consolation)\t\t$100\n\t\t\nTotal monies to be paid out\t\t$13,950"
+      text: "Total Entries\t99\t\n\t\t\nEntry Fee\t$150\t\n\t\t\nTotal Prize Money\t$14,850\n\t\t\n6 Monthly winners ( = 30% of total)\t$740\t$4,440\n\t\t\nOverall 1st place  \t\t$4,510\n\t\t\nOverall 2nd place  \t\t$2,900\n\t\t\nOverall 3rd place  \t\t$1,500\n\t\t\nOverall 4th place  \t\t$900\n\nOverall 5th Place $500\t\t\n\nOverall last place (Consolation)\t\t$100\n\t\t\nTotal monies to be paid out\t\t$14,850"
     type: TextArea
   layout_properties: {grid_position: 'GYMYRA,KUCUCZ'}
   name: card_1
