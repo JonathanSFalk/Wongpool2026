@@ -15,18 +15,18 @@ class PlayersToTeams(PlayersToTeamsTemplate):
     retmat = anvil.server.call('p2team')
     # Any code you write here will run when the form opens.
     for r in retmat:
-      fp = FlowPanel(border='double',spacing='small')
+      fp = FlowPanel(border='1px solid #ccc', spacing='small')
       if r[1]==1:
         tstr = ' team'
       else:   
         tstr = ' teams'
       fp.add_component(Label(text=r[0] + ': ' + str(r[1]) + tstr,
-               bold=True,spacing_above='none',spacing_below='none'
-               ))
-      for z in range(r[1]):
-        fp.add_component(Label(text=r[2][z],spacing_above='none',
-                  italic=True,spacing_below='none'))
+                           bold=True, spacing_above='none', spacing_below='none', width="100%"))
+      team_list = ' • '.join([r[2][z] for z in range(r[1])])
+      #team_list = ' ¤ '.join([r[2][z] for z in range(r[1])])
+      fp.add_component(Label(text=team_list, italic=True, 
+                           spacing_above='none', spacing_below='none'))
       self.p2teams.add_component(fp)
       self.p2teams.add_component(Spacer(height=2))
-    
+
 
