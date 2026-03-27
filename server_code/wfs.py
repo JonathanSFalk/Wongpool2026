@@ -96,13 +96,13 @@ def getresults():
     last_month = int(dmax[5:7])
     # New line if the season ends in September
     # Comment out when season begind
-    last_month = 10
+ #   last_month = 10
     if last_month==3:
       last_month=4
     if last_month==10:
       last_month=9
     # Comment out ofter last games  
-      last_month = 10  
+#      last_month = 10  
     # Create monthly winners: results code 1
     for i in range(4,last_month):
         standings = monthstandings(i)
@@ -236,14 +236,14 @@ def p2team():
     players = app_tables.players.search()
     retmat = []
     #Code fills the teams; to be used after all the teams are in
-    #for p in players:
-     # pnum = p['pnum']
-      #the_teams = [r['Teamname'] for r in 
-       #    app_tables.teams.search(q.any_of(P1=pnum,P2=pnum,
-      #P3=pnum,P4=pnum,P5=pnum,P6=pnum,P7=pnum,P8=pnum))]
-      #retmat.append([p['fullname'],len(the_teams),the_teams])  
-      ## This line populates the 'teams' column.  To be used only before the season starts
- #     p['teams'] = the_teams
+#    for p in players:
+#      pnum = p['pnum']
+#      the_teams = [r['Teamname'] for r in 
+#           app_tables.teams.search(q.any_of(P1=pnum,P2=pnum,
+#      P3=pnum,P4=pnum,P5=pnum,P6=pnum,P7=pnum,P8=pnum))]
+#      retmat.append([p['fullname'],len(the_teams),the_teams])  
+#      ## This line populates the 'teams' column.  To be used only before the season starts
+#      p['teams'] = the_teams
     for p in players:
       pnum = p['pnum']
       retmat.append([p['fullname'],len(p['teams']),p['teams']])

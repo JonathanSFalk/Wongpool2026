@@ -57,13 +57,13 @@ def get_all_homers(date):
 #  x = anvil.server.call('check_a_team',t)
 #open_form('Analytics')
 #x = anvil.server.call('fill_in_players')
-x=anvil.server.call('make_teams')
+#x=anvil.server.call('make_teams')
 #exit
 #anvil.server.call('start_update')
-#open_form('HomePage')
+open_form('HomePage')
 
 #open_form('TeamPicker')
-u = anvil.server.call("start_update")
+#u = anvil.server.call("start_update")
 
 #pdf = anvil.server.call('pdf2')
 #anvil.media.download(pdf)
