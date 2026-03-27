@@ -146,7 +146,7 @@ def update():
             emailbody = emailbody + "[Unchanged: " + fullname + " on " + date + " hit " + str(homers) + "]\n"
     if hrlist==[]:
         emailbody = emailbody + 'No Homers Hit'
-    anvil.email.send(from_name="Wongpool 2025",
+    anvil.email.send(from_name="Wongpool 2026",
                    to=["jonathansfalk@gmail.com",'drwfood@hotmail.com'],
                    subject="Update",
                    text=emailbody,
@@ -167,7 +167,7 @@ def update():
     return 
 
 def nocrash():
-  anvil.email.send(from_name="Wongpool 2025",
+  anvil.email.send(from_name="Wongpool 2026",
                    to="jonathansfalk@gmail.com",
                    subject="Update",
                    text="No Crash",
