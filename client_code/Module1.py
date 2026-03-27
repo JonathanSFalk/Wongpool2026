@@ -46,8 +46,8 @@ def get_all_homers(date):
     return retn
 #open_form('SplashScreen')
 #Open Form1
-open_form('signup')
-user = anvil.users.get_user()
+#open_form('signup')
+#user = anvil.users.get_user()
 #while user is None:
 #  open_form('TeamPicker')
 #update_text = update()
@@ -63,7 +63,7 @@ x=anvil.server.call('make_teams')
 #open_form('HomePage')
 
 #open_form('TeamPicker')
-
+u = anvil.server.call("start_update")
 
 #pdf = anvil.server.call('pdf2')
 #anvil.media.download(pdf)
