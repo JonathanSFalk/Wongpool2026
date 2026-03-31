@@ -176,7 +176,7 @@ def nocrash():
     from_email='webmaster@wongpool.com',
     to_emails=['jonathansfalk@gmail.com'],
     subject='Wongpool Crash Report',
-    plain_text_content="Update Program Completed")
+    plain_text_content="Update Program Completed and Updated through the CLI")
     response = sg.send(message)
     return 
   
