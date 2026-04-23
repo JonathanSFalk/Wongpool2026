@@ -246,8 +246,7 @@ def p2team():
 #      p['teams'] = the_teams
     for p in players:
       pnum = p['pnum']
-      retmat.append([p['fullname'],len(p['teams']),p['teams']])
-  
-    retmat.sort(key=lambda x:-x[1])
+      retmat.append({'name': p['fullname'], 'count': len(p['teams']), 'teams': p['teams']})
+    retmat.sort(key=lambda x:-x['count'])
     return retmat    
 
