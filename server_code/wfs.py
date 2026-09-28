@@ -96,7 +96,7 @@ def getresults():
     last_month = int(dmax[5:7])
     # New line if the season ends in September
     # Comment out when season begind
- #   last_month = 10
+    last_month = 10
     if last_month==3:
       last_month=4
     if last_month==10:
